@@ -1,0 +1,90 @@
+@use 'variables' as *;
+@use './../styles/structure.scss' as structure;
+@use './../styles/imports.scss' as imports;
+
+p {
+    font-size: 1.3em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    .bgAnimation {
+        position: absolute;
+        width: 300%;
+        height: 100%;
+        left: 0;
+        animation: linearLuz .03s infinite linear;
+    }
+    @keyframes linearLuz {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -200%;
+        }
+    }
+    .boxHeader {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 90%;
+        max-width: 960px;
+        padding: 4em 0;
+        .logotipo {
+            margin: 0 auto;
+            display: block;
+            width: 45em;
+        }
+        h1, p {
+            color: #ffffff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.3em;
+            line-height: 1;
+            span {
+                font-size: .6em;
+            }
+        }
+    }
+}
+
+.boxForm {
+    color: #ffffff;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    .linha {
+        width: 100%;
+        height: .1em;
+        background-color: #cccccc;
+        margin: 3em auto 1.5em;
+    }
+
+    h2, p {
+        text-align: center;
+    }
+
+    h2 {
+        opacity: 0;
+    }
+
+    .line {
+        font-size: 4.2em;
+        // color: #12FBFE;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .text {
+        max-width: 450px;
+        margin: .5em auto 0;
+    }
+}

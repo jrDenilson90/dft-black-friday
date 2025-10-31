@@ -155,8 +155,8 @@
         z-index: 1;
 
         .boxModal {
-            background-color: #ffffff;
-            border: solid black .15em;
+            background-color: #000000;
+            border: solid #4E2F90 0.15em;
             width: fit-content;
             max-width: 90%;
             border-radius: 1em;
@@ -169,8 +169,8 @@
             .modal-fechar {
                 margin-top: 1em;
                 background-color: transparent;
-                background-color: #D63F98;
-                border: solid black .15em;
+                background-color: #4E2F90;
+                border: solid #ffffff .15em;
                 padding: .5em 1em;
                 border-radius: 5em;
                 position: relative;
@@ -184,7 +184,8 @@
                 }
 
                 &:hover {
-                    background-color: #962b69;
+                    transform: scale(1.1);
+                    // background-color: #962b69;
                 }
             }
         }

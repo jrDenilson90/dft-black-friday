@@ -14,13 +14,15 @@
 
 .dafitiStructure {
     font-size: 62.5%;
-    background-color: #000000;
 }
 
 .full-hd {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
 }
 
 // // Loading
@@ -60,11 +62,6 @@
 //     }
 // }
 
-// .dafitiStructure {
-//     display: flex;
-//     gap: 2em;
-// }
-
 .glitch {
     position: relative;
     overflow: hidden;
@@ -72,6 +69,8 @@
     width: fit-content;
     
     .line {
+        line-height: 1;
+        text-align: center;
 
         @media (max-width: 768px) {
             font-size: 2.4em;
@@ -150,9 +149,9 @@
         @for $i from 1 through 10 {
             &:nth-child(#{$i}) {
                 animation: clip 3000ms $i * -300ms linear infinite,
-                glitch#{$i} 1800ms math.random(1000) * -1ms linear infinite;
+                glitch2#{$i} 1800ms math.random(1000) * -1ms linear infinite;
 
-                @keyframes glitch#{$i} {
+                @keyframes glitch2#{$i} {
                     0% {
                         transform: translateX(0);
                         color: #12FBFE;
@@ -188,18 +187,23 @@
     }
 }
 
-.glitch-img {
+.glitch-img,
+.glitch-img-infinite {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
     width: fit-content;
+    max-width: 100%;
 
     img {
         width: 100%;
     }
 
     .line {
+        &.block {
+            animation: none !important;
+        }
 
         &:not(:first-child) {
             position: absolute;
@@ -256,7 +260,7 @@
 
                     96% {
                         transform: translateX(math.random(10) - 10px);
-                        --glitch-opacity: 0.1; 
+                        --glitch-opacity: 0.2; 
                         --glitch-clip: polygon(0 0, 100% 0, 100% 10%, 0 10%);
                     }
                     
@@ -268,7 +272,7 @@
 
                     99% {
                         transform: translateX(math.random(5) - 10px);
-                        --glitch-opacity: 0.1; 
+                        --glitch-opacity: 0.3; 
                         --glitch-clip: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
                     }
 

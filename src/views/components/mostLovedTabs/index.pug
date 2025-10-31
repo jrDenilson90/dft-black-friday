@@ -16,7 +16,12 @@ mixin mostLovedTabs(tabs)
             each tab, idx in tabs
                 - const tabClass = `tabContent tabContent${idx+1}`
                 article(class=tabClass)
-                    img(src=tab.img, alt=tab.title, height="196", width="196")
+                    .glitch-img-infinite
+                        picture.line
+                            img(src=tab.img, alt=tab.title, height="196", width="196")
                     div
                         p= tab.text
-                        a(href=tab.link.url)= tab.link.text
+                        
+                        if tab.link
+                            a(href=tab.link.url)
+                                p= tab.link.text

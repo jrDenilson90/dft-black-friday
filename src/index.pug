@@ -18,9 +18,11 @@ html(lang="pt-br")
 
             .full-hd
                 .header
-                    img.bgAnimation(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+                    .glitch-img.bgAnimation
+                        picture.line
+                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
                     .boxHeader
-                        .glitch-img
+                        .glitch-img-infinite
                             picture.line.logotipo
                                 img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
                         h1 Black Friday Dafiti<br> <span>As Melhores Marcas na Black Mais Fashion do Ano!</span>
@@ -31,96 +33,595 @@ html(lang="pt-br")
                 
                 .boxForm
                     .linha
-                    .glitch
+                    .glitch.glitch-02
                         h2.line OFERTAS <span>EXCLUSIVAS</span>
                     p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
                     +template-formulario-crm('black-friday2025')
                     .linha
 
                 .boxInfos
-                    .card
-                        img(src="", alt="")
-                        p A black mais fashion do mundo
-                    .card
-                        img(src="", alt="")
-                        p Os melhores descontos com até 80% off
-                    .card
-                        img(src="", alt="")
-                        p Os melhores descontos com até 80% off
-                    .card
-                        img(src="", alt="")
-                        p Os melhores descontos com até 80% off
+                    .bodyGroup
+                        .card.glitch-img
+                            picture.line
+                                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                            p A <b>black</b> mais fashion do mundo
+                        .card.glitch-img
+                            picture.line
+                                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                            p Os melhores descontos com até <b>80% off</b>
+                        .card.glitch-img
+                            picture.line
+                                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                            p A melhor forma de pagamento em até <b>10x sem juros</b>
+                        .card.glitch-img
+                            picture.line
+                                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                            p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
 
-                //- .boxQrCode
-                    img(src="", alt="")
-                    .boxText
-                        h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
-                        p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
-                        a(href="http://")
-                            p Baixe o App
+                .boxQrCode
+                    .boxMax
+                        .boxImg
+                            img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+                        .boxText
+                            h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                            p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                            a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                                p Baixe o App
                 
-                //- +mostLovedTabs([
-                //-     {
-                //-         title: "Vestidos",
-                //-         img: "https://dft-cms.s3.sa-east-1.amazonaws.com/cms/2025_02_24_12_20_15_vestidos.png",
-                //-         text: "Os vestidos estão entre os itens mais buscados...",
-                //-         link: { url: "https://www.dafiti.com.br/roupas-femininas/vestidos/", text: "Veja mais" }
-                //-     },
-                //-     {
-                //-         title: "Bolsas",
-                //-         img: "https://dft-cms.s3.sa-east-1.amazonaws.com/cms/2025_02_24_12_20_13_bolsas.png",
-                //-         text: "As bolsas são essenciais e sempre marcam presença nas promoções de Data Dupla...",
-                //-         link: { url: "https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/", text: "Escolha já" }
-                //-     }
-                //- ])
+                .boxBorderWhite
+                    .boxBorderRadius
+                        .boxMostLovedTab
+                            .glitch
+                                h2.line <span>OS MAIS AMADOS DA</span> BLACK FRIDAY DAFITI
+                            +mostLovedTabs([
+                                {
+                                    title: "Vestidos",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_11_22_37_48_loved-vestidos.png",
+                                    text: "Descubra a infinidade de vestidos na Black Friday Dafiti. De modelos clássicos a estampas vibrantes, nossa seleção abrange estilos para todas as ocasiões, desde festas sofisticadas até encontros casuais. Com descontos exclusivos e peças das melhores marcas, essa é a sua chance de aproveitar!",
+                                    link: { url: "https://www.dafiti.com.br/roupas-femininas/vestidos/", text: "Conhecer" }
+                                },
+                                {
+                                    title: "Bolsas",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_31_10_28_14_loved-bolsas.png",
+                                    text: "A Black Friday Dafiti não está completa sem a bolsa perfeita. Explore nossa variedade impressionante de bolsas femininas que combinam estilo e funcionalidade de forma impecável. Desde bolsas de transversais atuais até clutches elegantes, nossa seleção atende a todas as tendências de moda.",
+                                    link: { url: "https://www.dafiti.com.br/black-friday/bolsas/#main_content", text: "Conhecer" }
+                                },
+                                {
+                                    title: "Sandálias Femininas",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_31_10_28_18_loved-sandalias.png",
+                                    text: "Prepare-se para o verão com as sandálias femininas da Black Friday Dafiti. Aqui você encontra diversos estilos, desde rasteirinhas casuais até sandálias de salto alto que exalam elegância. Aproveite agora nossos descontos especiais em produtos das marcas mais amadas.",
+                                    link: { url: "https://www.dafiti.com.br/black-friday/sandalias/#main_content", text: "Conhecer" }
+                                },
+                                {
+                                    title: "Tênis",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_31_10_28_20_loved-tenis.png",
+                                    text: "Seja para praticar esportes ou para dar um toque de estilo ao seu look, na Black Friday Dafiti você encontra o tênis ideal. Desde os icônicos tênis brancos até modelos de alta performance. Não perca a oportunidade de adquirir tênis de marcas renomadas com descontos impressionantes.",
+                                    link: { url: "https://www.dafiti.com.br/black-friday/tenis/#main_content", text: "Conhecer" }
+                                },
+                                {
+                                    title: "Camisetas",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_31_10_28_16_loved-camisetas.png",
+                                    text: "As camisetas são essenciais em todos guarda-roupas, e na Black Friday Dafiti, temos uma ampla seleção de itens para cada estilo. Desde camisetas básicas até modelos estampados, na Dafiti você encontra peças das marcas mais amadas com qualidade incomparável. Aproveite os descontos exclusivos.",
+                                    link: { url: "https://www.dafiti.com.br/black-friday/camisetas/#main_content", text: "Conhecer" }
+                                },
+                                {
+                                    title: "E Mais",
+                                    img: "https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_17_10_47_20_loved-shorts.png",
+                                    text: "Além desses produtos incríveis, também temos uma extensa variedade de itens de moda feminina e masculina. Nossa seleção infantil apresenta roupas, calçados e acessórios para garantir que a criançada esteja sempre na moda. Além disso, para quem valoriza o conforto e o estilo em casa, temos produtos para cama, mesa e banho. Aproveite a Black Friday Dafiti!",
+                                }
+                            ])
 
-                //- .listLogs
-                    .boxImg
-                        img(src="", alt="")
-                    .boxImg
-                        img(src="", alt="")
-                    .boxImg
-                        img(src="", alt="")
-                    .boxImg
-                        img(src="", alt="")
-                    .boxImg
-                        img(src="", alt="")
+                        .listLogs
+                            .bodyGroup
+                                a(href="https://www.dafiti.com.br/black-friday/nike/#main_content") 
+                                    .boxImg.glitch-img
+                                        picture.line
+                                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_15_45_39_Link1.png", alt="")
+                                a(href="https://www.dafiti.com.br/black-friday/adidas/#main_content") 
+                                    .boxImg.glitch-img
+                                        picture.line
+                                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_15_45_40_Link2.png", alt="")
+                                a(href="https://www.dafiti.com.br/black-friday/gap/#main_content") 
+                                    .boxImg.glitch-img
+                                        picture.line
+                                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_15_45_42_Link3.png", alt="")
+                                a(href="https://www.dafiti.com.br/black-friday/mango/#main_content") 
+                                    .boxImg.glitch-img
+                                        picture.line
+                                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_15_45_44_Link4.png", alt="")
+                                a(href="https://www.dafiti.com.br/black-friday/santa-lolla/#main_content") 
+                                    .boxImg.glitch-img
+                                        picture.line
+                                            img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_15_45_45_Link5.png", alt="")
 
-                //- .boxAccordion
-                    h2 dúvidas sobre a BLACK FRIDAY DAFITI
+                .boxAccordion
+                    .glitch
+                        h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
                     +accordionComponent([
                         {
-                            title: 'Titulo Accordeon 1',
+                            title: 'O que é a Black Friday?',
                             bodyAccordion: `
-                                <p>Conteúdo <strong>HTML</strong> do primeiro accordion.</p>
+                                <p>Descubra a Emoção da Black Friday Dafiti</p>
+                                <p>A Black Friday é um evento de compras que surgiu nos Estados Unidos e se popularizou em diversos países ao redor do mundo. Durante esse período, várias lojas, incluindo a Dafiti, oferecem descontos significativos em seus produtos, permitindo aos clientes fazerem compras com preços mais baixos.</p>
+                            `
+                        },
+                        {
+                            title: 'Quando é a Black Friday?',
+                            bodyAccordion: `
+                                <p>A Black Friday acontece na última sexta-feira de novembro a cada ano</p>
+                                <p>A Black Friday de 2025 será no dia 28 de novembro de 2025. É importante lembrar que, embora a Black Friday tenha começado nos Estados Unidos, essa tradição de compras com descontos significativos se espalhou para muitos outros países ao redor do mundo.</p>
+                            `
+                        },
+                        {
+                            title: 'Como funciona a Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>Economize na Black Friday Dafiti!</p>
+                                <p>A Black Friday Dafiti funciona da seguinte forma: a loja oferece descontos especiais em uma ampla variedade de produtos, incluindo roupas, calçados, acessórios e muito mais. Os clientes podem acessar o site da Dafiti, explorar as ofertas disponíveis e fazer compras com preços promocionais.</p>
+                            `
+                        },
+                        {
+                            title: 'Quais as principais marcas da Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>Confira algumas das principais marcas que você encontrará durante a Black Friday Dafiti:</p>
                                 <ul>
                                     <li>
-                                        <p>Item 1</p>
+                                        <a href="https://www.dafiti.com.br/nike/", rel="noopener noreferrer">
+                                            <p>Nike</p>
+                                        </a>
                                     </li>
                                     <li>
-                                        <p>Item 2</p>
+                                        <a href="https://www.dafiti.com.br/adidas/", rel="noopener noreferrer">
+                                            <p>adidas</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/reserva/", rel="noopener noreferrer">
+                                            <p>Reserva</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/colcci/", rel="noopener noreferrer">
+                                            <p>Colcci</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/santa-lolla/", rel="noopener noreferrer">
+                                            <p>Santa Lolla</p>
+                                        </a>
                                     </li>
                                 </ul>
                             `
                         },
                         {
-                            title: 'Titulo Accordeon 2',
+                            title: 'Quais as marcas exclusivas da Black Friday Dafiti?',
                             bodyAccordion: `
-                                <p>Conteúdo <strong>HTML</strong> do segundo accordion.</p>
+                                <p>Explore a exclusividade da Black Friday Dafiti com nossa seleção de marcas premium:</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/mango/", rel="noopener noreferrer">
+                                            <p>Mango</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/gap/", rel="noopener noreferrer">
+                                            <p>GAP</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/loja-forever21/", rel="noopener noreferrer">
+                                            <p>Forever 21</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/topshop/", rel="noopener noreferrer">
+                                            <p>Topshop</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/topman/", rel="noopener noreferrer">
+                                            <p>TopMan</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/banana-republic/", rel="noopener noreferrer">
+                                            <p>Banana Republic</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             `
                         },
                         {
-                            title: 'Titulo Accordeon 3',
+                            title: 'Quais produtos femininos eu encontro na Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>
+                                    Na Black Friday Dafiti, você pode encontrar uma ampla variedade de
+                                    produtos femininos, incluindo
+                                    <a href="https://www.dafiti.com.br/roupas-femininas/">roupas elegantes</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-femininos/">calçados estilosos</a>,
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/">acessórios da moda</a>
+                                    e muito mais, tudo a preços promocionais.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/roupas-femininas/">Roupas</a>
+                                        em Oferta
+                                        Marcas como
+                                        <a href="https://www.dafiti.com.br/mango/">Mango</a> e
+                                        <a href="https://www.dafiti.com.br/loja-lancaperfume/">Lança Perfume</a>
+                                        oferecem vestuário elegante para mulheres.
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/calcados-femininos/">Calçados</a>
+                                        com Preços Especiais
+                                        Encontre sapatos estilosos de marcas como
+                                        <a href="https://www.dafiti.com.br/santa-lolla/">Santa Lolla</a>
+                                        e
+                                        <a href="https://www.dafiti.com.br/adidas-originals/">Adidas Originals</a>.
+                                    </li>
+                                    <li>
+                                        Liquidação de
+                                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/">Acessórios</a>
+                                        Compre acessórios da moda de marcas exclusivas como
+                                        <a href="https://www.dafiti.com.br/capodarte/">Capodarte</a> e
+                                        <a href="https://www.dafiti.com.br/luiza-barcelos/">Luiza Barcelos</a>.
+                                    </li>
+                                    </ul>
+                            `
+                        },
+                        {
+                            title: 'Quais peças masculinas estão na Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>
+                                    Para os homens, a Black Friday Dafiti oferece uma seleção incrível
+                                    de
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/">peças masculinas</a>, como
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/camisas/">camisas</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">calças</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">tênis</a>,
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/relogios/">relógios</a>
+                                    e outros
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/">acessórios</a>, tudo com descontos especiais.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisas/">Camisas</a>
+                                        e
+                                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">Calças</a>
+                                        em Promoção
+                                        Escolha entre uma variedade de camisas e calças de marcas como
+                                        <a href="https://www.dafiti.com.br/colcci/">Colcci</a> e
+                                        <a href="https://www.dafiti.com.br/reserva/">Reserva</a>.
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">Tênis</a>
+                                        e
+                                        <a href="https://www.dafiti.com.br/calcados-masculinos/sapato-casual/">Sapatos</a>
+                                        com Descontos
+                                        Explore uma seleção de tênis de marcas renomadas como
+                                        <a href="https://www.dafiti.com.br/osklen/">Osklen</a> e
+                                        <a href="https://www.dafiti.com.br/loja-nike/">Nike</a>.
+                                    </li>
+                                    <li>
+                                        Ofertas de
+                                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/">Bonés</a>
+                                        e
+                                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/">Acessórios</a>
+                                        Adquira bonés e outros acessórios de moda de marcas como
+                                        <a href="https://www.dafiti.com.br/new-era/">New Era</a>.
+                                    </li>
+                                    </ul>
+                            `
+                        },
+                        {
+                            title: 'Quais são os itens infantis da Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>
+                                    Para as crianças, a Black Friday Dafiti apresenta uma variedade de
+                                    itens infantis, incluindo
+                                    <a href="https://www.dafiti.com.br/roupas-infantis/">roupas</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-infantis/">sapatos</a>
+                                    e
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-infantis/">acessórios</a>
+                                    para bebês e crianças, todos disponíveis a preços reduzidos.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Descontos Exclusivos em
+                                        <a href="https://www.dafiti.com.br/roupas-infantis/">Roupas</a>
+                                        e
+                                        <a href="https://www.dafiti.com.br/calcados-infantis/">Sapatos</a>
+                                        Encontre roupas adoráveis e sapatos confortáveis para bebês e
+                                        crianças de marcas como
+                                        <a href="https://www.dafiti.com.br/gap/">GAP</a> e
+                                        <a href="https://www.dafiti.com.br/klin/">Klin</a>.
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-infantis/">Acessórios</a>
+                                        com Preços Especiais
+                                        Descubra acessórios fofos e práticos de marcas renomadas como
+                                        <a href="https://www.dafiti.com.br/mini-melissa/">Mini Melissa</a>.
+                                    </li>
+                                    </ul>
+                            `
+                        },
+                        {
+                            title: 'Como achar as melhores ofertas na Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>
+                                    Para encontrar as melhores ofertas na Black Friday Dafiti, você
+                                    pode explorar o
+                                    <a href="https://www.dafiti.com.br/">site da loja</a>, onde as
+                                    promoções estarão indicadas. Além disso, fique de olho nas redes
+                                    sociais da Dafiti e assine a newsletter para receber informações
+                                    sobre ofertas exclusivas.
+                                </p>    
+                                <ol>
+                                    <li>
+                                        <h4>Explore o Site</h4>
+                                        Navegue pelo site da Dafiti para descobrir ofertas especiais em
+                                        diversas categorias de produtos, incluindo moda feminina,
+                                        masculina e infantil.
+                                    </li>
+                                    <li>
+                                        <h4>Fique Atento às Promoções</h4>
+                                        As promoções estarão claramente indicadas no site, mostrando os
+                                        descontos e produtos em destaque.
+                                    </li>
+                                    <li>
+                                        <h4>Siga nas Redes Sociais</h4>
+                                        Siga a Dafiti nas redes sociais para receber atualizações em
+                                        tempo real sobre ofertas relâmpago, descontos exclusivos e
+                                        lançamentos de produtos.
+                                    </li>
+                                    <li>
+                                        <h4>Assine a Newsletter</h4>
+                                        Ao assinar a newsletter da Dafiti, você receberá informações
+                                        sobre ofertas exclusivas diretamente em seu e-mail, garantindo
+                                        que você não perca nenhuma oportunidade.
+                                    </li>
+                                    <li>
+                                        <h4>Participe de Alertas de Preço</h4>
+                                        Utilize ferramentas de alerta de preço para ser notificado
+                                        quando um produto desejado atingir o preço desejado.
+                                    </li>
+                                    <li>
+                                        <h4>Compare Preços</h4>
+                                        Compare os preços dos produtos em diferentes lojas para garantir
+                                        que você está realmente obtendo o melhor negócio.
+                                    </li>
+                                    <li>
+                                        <h4>Aproveite Cupons de Desconto</h4>
+                                        Utilize cupons de desconto, quando disponíveis, para economizar
+                                        ainda mais nas suas compras durante a Black Friday.
+                                    </li>
+                                </ol>   
+                            `
+                        },
+                        {
+                            title: 'Tem frete grátis na Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>Sim, durante a Black Friday Dafiti, temos frete grátis para várias regiões do Brasil. Confira as condições no site para maiores informações sobre cada região do Brasil.</p>
+                                <p>É importante compreender as diferenças no frete, dependendo se o produto é vendido e entregue pela Dafiti ou se é de um parceiro no marketplace. Veja abaixo as distinções:</p>
+                                <ul>
+                                    <li>
+                                        <h4>Produtos Vendidos e Entregues por Dafiti</h4>
+                                        Para produtos que são vendidos e entregues diretamente pela
+                                        Dafiti, oferecemos frete grátis para várias regiões do Brasil.
+                                        As condições variam de acordo com a localização e o valor da
+                                        compra.
+                                    </li>
+                                    <li>
+                                        <h4>
+                                        Produtos Marketplace - Vendidos por Parceiros e Entregues pela
+                                        Dafiti
+                                        </h4>
+                                        Alguns produtos são vendidos por parceiros no marketplace e
+                                        entregues pela Dafiti. O frete para esses produtos geralmente
+                                        segue as mesmas condições dos produtos Dafiti, mas é importante
+                                        verificar as informações específicas na página do produto para
+                                        conferir as informações de frete.
+                                    </li>
+                                    <li>
+                                        <h4>
+                                        Produtos Marketplace - Vendidos e Entregues pelos Parceiros
+                                        </h4>
+                                        Produtos que são vendidos e entregues diretamente pelos
+                                        parceiros no marketplace têm políticas de frete independentes.
+                                        Cada parceiro pode ter condições de frete diferentes e taxas de
+                                        entrega variáveis.
+                                    </li>
+                                </ul>
+                            `
+                        },
+                        {
+                            title: 'Quais as formas de pagamento que a Dafiti aceita na Black Friday?',
+                            bodyAccordion: `
+                                <p>Quais as formas de pagamento que a Dafiti aceita na Black Friday?</p>
+                                <table border="1">
+                                    <tbody><tr>
+                                        <th><b>Formas de Pagamento</b></th>
+                                        <th><b>Descrição</b></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Cartão de Crédito</td>
+                                        <td>
+                                        Várias bandeiras são aceitas, incluindo Visa, MasterCard e
+                                        Elo. Você também pode parcelar suas compras (<a href="https://www.dafiti.com.br/perguntas-frequentes/">confira as condições</a>).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boleto Bancário</td>
+                                        <td>
+                                        É possível pagar suas compras através de boleto bancário.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PIX</td>
+                                        <td>
+                                        A Dafiti aceita pagamentos via PIX, uma forma rápida e segura
+                                        de transferência bancária.
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            `
+                        },
+                        {
+                            title: 'Existem cupons de desconto na Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <h4>Maximize sua Economia com Cupons de Desconto!</h4>
+                                <p>
+                                    Sim, durante a Black Friday Dafiti, a loja disponibiliza cupons de
+                                    desconto que podem ser aplicados durante o processo de compra,
+                                    proporcionando ainda mais economia aos clientes.
+                                </p>
+                            `
+                        },
+                        {
+                            title: 'Quais as vantagens de comprar na Black Friday Dafiti?',
                             bodyAccordion: `
                                 <p>Conteúdo <strong>HTML</strong> do terceiro accordion.</p>
                                 <ul>
                                     <li>
-                                        <p>Item 1</p>
+                                        <h4>Descontos Exclusivos</h4>
+                                        A Black Friday Dafiti oferece descontos especiais em uma ampla
+                                        variedade de produtos.
                                     </li>
                                     <li>
-                                        <p>Item 2</p>
+                                        <h4>Frete Grátis</h4>
+                                        Para diversas regiões do Brasil, a Dafiti oferece frete grátis
+                                        durante a Black Friday.
+                                    </li>
+                                    <li>
+                                        <h4>Cupons de Desconto</h4>
+                                        Os clientes podem utilizar cupons de desconto para economizar
+                                        ainda mais em suas compras.
+                                    </li>
+                                    <li>
+                                        <h4>Variedade de Produtos</h4>
+                                        Na Dafiti, você encontra uma grande variedade de marcas e
+                                        produtos, desde roupas e calçados até acessórios e itens
+                                        infantis.
                                     </li>
                                 </ul>
+                            `
+                        },
+                        {
+                            title: 'O que posso esperar da Black Friday Dafiti?',
+                            bodyAccordion: `
+                                <p>Conteúdo <strong>HTML</strong> do terceiro accordion.</p>
+                                <p>
+                                    Na Black Friday Dafiti, você pode esperar uma experiência de
+                                    compras incrível! Encontre descontos exclusivos em uma ampla
+                                    variedade de produtos, incluindo roupas, calçados e acessórios das
+                                    principais marcas. Além disso, aproveite vantagens como frete
+                                    grátis para várias regiões do Brasil, cupons de desconto.
+                                    Prepare-se para economizar e renovar seu guarda-roupa com as
+                                    melhores ofertas da Black Friday Dafiti!
+                                </p>
+                                <h4>Principais Produtos na Black Friday Dafiti</h4>
+                                <table border="1">
+                                <tbody><tr>
+                                    <th><b>Categoria</b></th>
+                                    <th><b>Principais Roupas</b></th>
+                                    <th><b>Principais Calçados</b></th>
+                                    <th><b>Principais Acessórios</b></th>
+                                    <th><b>Principais Marcas</b></th>
+                                    <th><b>Dicas de Ocasiões de Uso</b></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/feminino/">Feminino</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/roupas-femininas/vestidos/">Vestidos</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-femininas/saias/">Saias</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans/">Jeans</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-femininos/rasteiras/">Rasteiras</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/">Bolsas</a>,
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/carteiras/">Carteiras</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/mango/">Mango</a>,
+                                    <a href="https://www.dafiti.com.br/lanca-perfume/">Lança Perfume</a>,
+                                    <a href="https://www.dafiti.com.br/capodarte/">Capodarte</a>
+                                    </td>
+                                    <td>Eventos sociais, festas, encontros casuais</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/masculino/">Masculino</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/camisas/">
+                                        Camisas</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">
+                                        Calças</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">
+                                        Camisetas
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">
+                                        Tênis</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-masculinos/sapato-casual/">
+                                        sapatos
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/">Bonés</a>,
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/relogios/">Relógios</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/colcci/">Colcci</a>,
+                                    <a href="https://www.dafiti.com.br/reserva/">Reserva</a>,
+                                    <a href="https://www.dafiti.com.br/osklen/">Osklen</a>,
+                                    <a href="https://www.dafiti.com.br/new-era/">New Era</a>
+                                    </td>
+                                    <td>Trabalho, esportes, lazer</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/infantil/">Infantil</a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/roupas-infantis/conjunto/">
+                                        Conjuntos</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-infantis/macacao-e-macaquinho/">
+                                        Macacões</a>,
+                                    <a href="https://www.dafiti.com.br/roupas-infantis/body-e-culote/">
+                                        Bodies
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/calcados-infantis/sandalia/">
+                                        Sandálias</a>,
+                                    <a href="https://www.dafiti.com.br/calcados-infantis/tenis/">
+                                        Tênis
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-infantis/bones-e-chapeus/">
+                                        Chapéus</a>,
+                                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-infantis/mochilas-e-malas/">
+                                        mochilas
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="https://www.dafiti.com.br/gap/">GAP</a>,
+                                    <a href="https://www.dafiti.com.br/klin/">Klin</a>,
+                                    <a href="https://www.dafiti.com.br/mini-melissa/">
+                                        Mini Melissa
+                                    </a>
+                                    </td>
+                                    <td>Passeios em família, festas infantis</td>
+                                </tr>
+                                </tbody></table>
                             `
                         }
                     ])

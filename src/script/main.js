@@ -7,32 +7,11 @@ window.dataLayer.push({
     page_title: `ecommerce - content - ${document.title}`
 });
 
-// document.querySelectorAll('.cardTenis .photo').forEach(wrapper => {
-//     const img = wrapper.querySelector('img');
-    
-//     if (!img) return;
-  
-//     const applyVar = () => {
-//       const src = img.currentSrc || img.src;
-//       if (!src) return;
-//       wrapper.style.setProperty('--img', `url("${src}")`);
-//     };
-  
-//     if (img.complete && img.naturalWidth !== 0) {
-//       applyVar();
-//     } else {
-//       img.addEventListener('load', applyVar, { once: true });
-//       img.addEventListener('error', () => {
-//         console.warn('Imagem não carregou:', img);
-//       }, { once: true });
-//     }
-// });
-
-const glitchContainers = document.querySelectorAll('.glitch-img');
+const glitchContainersInfinite = document.querySelectorAll('.glitch-img-infinite');
 const glitchContainersText = document.querySelectorAll('.glitch');
 const NUM_COPIES = 9;
 
-glitchContainers.forEach(container => {
+glitchContainersInfinite.forEach(container => {
     const originalLine = container.querySelector('.line');
 
     if (!originalLine || container.dataset.hasBeenDuplicated) {
@@ -90,3 +69,47 @@ glitchContainersText.forEach(container => {
     // 6. Marca o container como duplicado
     container.dataset.hasBeenDuplicated = 'true';
 });
+
+const glitchContainers = document.querySelectorAll('.glitch-img');
+
+glitchContainers.forEach(container => {
+    const originalLine = container.querySelector('.line');
+
+    if (!originalLine || container.dataset.hasBeenDuplicated) {
+        return;
+    }
+
+    for (let i = 0; i < NUM_COPIES; i++) {
+        const newLine = originalLine.cloneNode(true);
+        container.appendChild(newLine);
+    }
+
+    container.dataset.hasBeenDuplicated = 'true';
+});
+
+// Função para adicionar/remover classe 'block' de forma aleatória
+function randomGlitchEffect() {
+    glitchContainers.forEach(container => {
+        const allLines = container.querySelectorAll('.line');
+        
+        // Decide aleatoriamente se TODOS os .line deste container terão a classe 'block'
+        const shouldAddBlock = Math.random() > 0.5;
+        
+        allLines.forEach(line => {
+            if (shouldAddBlock) {
+                line.classList.add('block');
+            } else {
+                line.classList.remove('block');
+            }
+        });
+    });
+}
+
+// Defina o intervalo em milissegundos (exemplo: 3000 = 3 segundos)
+const INTERVAL_MS = 2000;
+
+// Executa a função a cada X segundos
+setInterval(randomGlitchEffect, INTERVAL_MS);
+
+// Executa uma vez imediatamente ao carregar
+randomGlitchEffect();

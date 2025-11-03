@@ -17,7 +17,7 @@ html(lang="pt-br")
             <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
             .full-hd
-                .header
+                .headerBlack
                     .glitch-img.bgAnimation
                         picture.line
                             img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
@@ -25,9 +25,10 @@ html(lang="pt-br")
                         .glitch-img-infinite
                             picture.line.logotipo
                                 img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
-                        h1 Black Friday Dafiti<br> <span>As Melhores Marcas na Black Mais Fashion do Ano!</span>
+                        .glitch
+                            h1.line Black Friday Dafiti<br> <span>As Melhores Marcas na Black Mais Fashion do Ano!</span>
                         .boxText
-                            p A moda nunca foi tão acessível e divertida como na Black Friday Dafiti. Confira nossa seleção de roupas, calçados e acessórios das melhores marcas, com descontos de arrasar e frete grátis.
+                            p.text A moda nunca foi tão acessível e divertida como na Black Friday Dafiti. Confira nossa seleção de roupas, calçados e acessórios das melhores marcas, com descontos de arrasar e frete grátis.
                             p A Black Friday de 2025 acontecerá no dia 28 de novembro:
                         +countdown('2025-11-28T00:00:00')
                 
@@ -208,23 +209,13 @@ html(lang="pt-br")
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.dafiti.com.br/loja-forever21/", rel="noopener noreferrer">
-                                            <p>Forever 21</p>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="https://www.dafiti.com.br/topshop/", rel="noopener noreferrer">
                                             <p>Topshop</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.dafiti.com.br/topman/", rel="noopener noreferrer">
-                                            <p>TopMan</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.dafiti.com.br/banana-republic/", rel="noopener noreferrer">
-                                            <p>Banana Republic</p>
+                                        <a href="https://www.dafiti.com.br/tricae/", rel="noopener noreferrer">
+                                            <p>Tricae</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -450,12 +441,6 @@ html(lang="pt-br")
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Boleto Bancário</td>
-                                        <td>
-                                        É possível pagar suas compras através de boleto bancário.
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td>PIX</td>
                                         <td>
                                         A Dafiti aceita pagamentos via PIX, uma forma rápida e segura
@@ -626,728 +611,91 @@ html(lang="pt-br")
                         }
                     ])
 
-                //- .boxSearched
-                    h2 Mais buscados da Black
+                .boxSearched
+                    .glitch
+                        h2.line <span>Mais buscados da</span> BLACK
                     .searched
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-                        a(href="http://")
-                            p text 
-
-
-
-
-            //- +component-headerLp([
-            //-     {
-            //-         image: 'https://dafitistatic.dafiti.com.br/cms/2025_03_27_10_03_55_unnamed_(1).gif', 
-            //-         alt: 'logo',
-            //-         bgColor: '#000000'
-            //-     }
-            //- ])
-
-            //- .full-hd
-
-                +component-keenSlider(
-                    'my-keen-slider1', 
-                    [
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/1920/580?random=1',
-                            imageMob: 'https://picsum.photos/500?random=1',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/1920/580?random=2',
-                            imageMob: 'https://picsum.photos/500?random=2',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/1920/580?random=3',
-                            imageMob: 'https://picsum.photos/500?random=3',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/1920/580?random=4',
-                            imageMob: 'https://picsum.photos/500?random=4',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        }
-                    ], 
-                    { 
-                        arrows: true, 
-                        dots: true, 
-                        loop: true, 
-                        autoplay: true,
-                        animationType: false,
-                        breakpoints: {
-                            "(min-width: 769px)": { slides: { perView: 1, spacing: 0 } },
-                            "(max-width: 768px)": { slides: { perView: 1, spacing: 0 } }
-                        }
-                    }
-                )
-
-                +component-keenSlider(
-                    'my-keen-slider2',
-                    [
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=5',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=6',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=7',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=8',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=9',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        }
-                    ], 
-                    { 
-                        arrows: true, 
-                        dots: false, 
-                        loop: false, 
-                        autoplay: false,
-                        animationType: false,
-                        breakpoints: {
-                            "(min-width: 769px)": { slides: { perView: 3, spacing: 5 } },
-                            "(max-width: 768px)": { slides: { perView: 1.5, spacing: 5 } }
-                        }
-                    }
-                )
-
-                +component-keenSlider(
-                    'my-keen-slider3', 
-                    [
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=10',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=11',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=12',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=13',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=14',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        },
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/500?random=15',
-                            imageMob: '',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name'
-                        }
-                    ], 
-                    { 
-                        arrows: true, 
-                        dots: false, 
-                        loop: true, 
-                        autoplay: false, 
-                        animationType: true,
-                        breakpoints: {
-                            "(min-width: 769px)": { slides: { perView: 3.5, spacing: 5 } },
-                            "(max-width: 768px)": { slides: { perView: 1, spacing: 5 } }
-                        }
-                    }
-                )
-
-                +component-keenSlider(
-                    'my-keen-slider4', 
-                    [
-                        {
-                            link: 'https://link.com',
-                            imageDesk: 'https://picsum.photos/1920/580?random=16',
-                            imageMob: 'https://picsum.photos/500',
-                            alt: 'banner-exemplo',
-                            dataCreative: 'nome-data-creative',
-                            dataName: 'nome-data-name',
-                        }
-                    ], 
-                    { 
-                        arrows: false, 
-                        dots: false, 
-                        loop: false, 
-                        autoplay: false,
-                        animationType: false,
-                        breakpoints: {
-                            "(min-width: 769px)": { slides: { perView: 1, spacing: 0 } },
-                            "(max-width: 768px)": { slides: { perView: 1, spacing: 0 } }
-                        }
-                    }
-                )
-
-                +component-welcome([
-                    'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_32_download.png',
-                    'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_33_download_(1).png',
-                    'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_35_download_(2).png',
-                    'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_36_download_(3).png',
-                    'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_37_download_(4).png',
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxsVWwqRNvAk7bCP2lPtpKHc3T5btLzn_-A&s'
-                ])
-
-                +component-lineImage([
-                    {
-                        link: 'https://link1.com',
-                        imageDesk: 'https://picsum.photos/1920/580?random=17',
-                        imageMob: 'https://picsum.photos/1920/580?random=17',
-                        alt: 'Banner Nike com produtos TOP',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    }
-                ])
-
-                +component-lineImage([
-                    { 
-                        link: 'https://link1.com', 
-                        imageDesk: 'https://picsum.photos/1200/680?random=18',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                    { 
-                        link: 'https://link2.com', 
-                        imageDesk: 'https://picsum.photos/1200/680?random=19',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    }
-                ])
-
-                +component-lineImage([
-                    { 
-                        link: 'https://link1.com', 
-                        imageDesk: 'https://picsum.photos/1200/680?random=20',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                    { 
-                        link: 'https://link2.com', 
-                        imageDesk: 'https://picsum.photos/1200/680?random=21',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    }
-                ])
-
-                +component-lineImage([
-                    { 
-                        link: 'https://link1.com', 
-                        imageDesk: 'https://picsum.photos/580?random=22',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                    { 
-                        link: 'https://link2.com', 
-                        imageDesk: 'https://picsum.photos/580?random=23',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                    { 
-                        link: 'https://link3.com', 
-                        imageDesk: 'https://picsum.photos/580?random=24',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                    { 
-                        link: 'https://link4.com', 
-                        imageDesk: 'https://picsum.photos/580?random=25',
-                        imageMob: '',
-                        alt: 'Descrição da imagem',
-                        dataCreative: 'nome-data-creative',
-                        dataName: 'nome-data-name'
-                    },
-                ])
-
-                +countdown('2026-07-12T00:00:00')
-
-                +accordionComponent([
-                    {
-                        title: 'Titulo Accordeon 1',
-                        bodyAccordion: `
-                            <p>Conteúdo <strong>HTML</strong> do primeiro accordion.</p>
-                            <ul>
-                                <li>
-                                    <p>Item 1</p>
-                                </li>
-                                <li>
-                                    <p>Item 2</p>
-                                </li>
-                            </ul>
-                        `
-                    },
-                    {
-                        title: 'Titulo Accordeon 2',
-                        bodyAccordion: `
-                            <p>Conteúdo <strong>HTML</strong> do segundo accordion.</p>
-                        `
-                    },
-                    {
-                        title: 'Titulo Accordeon 3',
-                        bodyAccordion: `
-                            <p>Conteúdo <strong>HTML</strong> do terceiro accordion.</p>
-                            <ul>
-                                <li>
-                                    <p>Item 1</p>
-                                </li>
-                                <li>
-                                    <p>Item 2</p>
-                                </li>
-                            </ul>
-                        `
-                    }
-                ])
-
-                +flipCardsContainer('click', [
-                    { 
-                        front: `
-                            <h2>Click</h2>
-                            <h3>Card 1</h3>
-                            <p>Frente</p>
-                        `, 
-                        back: `
-                            <h2>Click</h2>
-                            <h3>Card 1</h3>
-                            <p>Verso</p>
-                        ` 
-                    },
-                    { 
-                        front: `
-                            <h2>Click</h2>
-                            <h3>Card 2</h3>
-                            <p>Frente</p>
-                        `, 
-                        back: `
-                            <h2>Click</h2>
-                            <h3>Card 2</h3>
-                            <p>Verso</p>
-                        ` 
-                    }
-                ])
-
-                +flipCardsContainer('hover', [
-                    { 
-                        front: `
-                            <h2>Hover</h2>
-                            <h3>Card 1</h3>
-                            <p>Frente</p>
-                        `, 
-                        back: `
-                            <h2>Hover</h2>
-                            <h3>Card 1</h3>
-                            <p>Verso</p>
-                        ` 
-                    },
-                    { 
-                        front: `
-                            <h2>Hover</h2>
-                            <h3>Card 2</h3>
-                            <p>Frente</p>
-                        `, 
-                        back: `
-                            <h2>Hover</h2>
-                            <h3>Card 2</h3>
-                            <p>Verso</p>
-                        ` 
-                    }
-                ])
-
-                +mostLovedTabs([
-                    {
-                        title: "Vestidos",
-                        img: "https://dft-cms.s3.sa-east-1.amazonaws.com/cms/2025_02_24_12_20_15_vestidos.png",
-                        text: "Os vestidos estão entre os itens mais buscados...",
-                        link: { url: "https://www.dafiti.com.br/roupas-femininas/vestidos/", text: "Veja mais" }
-                    },
-                    {
-                        title: "Bolsas",
-                        img: "https://dft-cms.s3.sa-east-1.amazonaws.com/cms/2025_02_24_12_20_13_bolsas.png",
-                        text: "As bolsas são essenciais e sempre marcam presença nas promoções de Data Dupla...",
-                        link: { url: "https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/", text: "Escolha já" }
-                    }
-                ])
-
-                +template-formulario-crm('teste-Front-end')
-
-                //- +buzzfeedQuiz([
-                //-     {
-                //-         text: 'Escolha a imagem que mais se assemelha a cor do seu cabelo:',
-                //-         options: [
-                //-             { text: 'Loiro claro', feedback: 'verao' },
-                //-             { text: 'Loiro dourado', feedback: 'primavera' },
-                //-             { text: 'Castanho claro', feedback: 'primavera' },
-                //-             { text: 'Castanho médio', feedback: 'outono' },
-                //-             { text: 'Castanho escuro', feedback: 'inverno' },
-                //-             { text: 'Preto', feedback: 'inverno' },
-                //-             { text: 'Ruivo', feedback: 'outono' },
-                //-             { text: 'Loiro platinado', feedback: 'verao' },
-                //-             { text: 'Loiro acinzentado', feedback: 'verao' },
-                //-             { text: 'Castanho avermelhado', feedback: 'outono' },
-                //-             { text: 'Preto azulado', feedback: 'inverno' },
-                //-             { text: 'Castanho dourado', feedback: 'primavera' },
-                //-             { text: 'Ruivo acobreado', feedback: 'primavera' },
-                //-             { text: 'Ruivo escuro', feedback: 'outono' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Escolha a imagem que mais se assemelha a cor dos seus olhos:',
-                //-         options: [
-                //-             { text: 'Azul', feedback: 'verao' },
-                //-             { text: 'Verde', feedback: 'primavera' },
-                //-             { text: 'Castanho claro', feedback: 'primavera' },
-                //-             { text: 'Castanho médio', feedback: 'outono' },
-                //-             { text: 'Castanho escuro', feedback: 'inverno' },
-                //-             { text: 'Mel/Âmbar', feedback: 'outono' },
-                //-             { text: 'Cinza', feedback: 'verao' },
-                //-             { text: 'Azul acinzentado', feedback: 'verao' },
-                //-             { text: 'Verde oliva', feedback: 'outono' },
-                //-             { text: 'Preto', feedback: 'inverno' },
-                //-             { text: 'Verde água', feedback: 'primavera' },
-                //-             { text: 'Azul profundo', feedback: 'inverno' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Escolha a imagem que mais se assemelha ao tom da sua pele:',
-                //-         options: [
-                //-             { text: 'Muito clara', feedback: 'verao' },
-                //-             { text: 'Clara', feedback: 'primavera' },
-                //-             { text: 'Média', feedback: 'outono' },
-                //-             { text: 'Oliva', feedback: 'inverno' },
-                //-             { text: 'Morena', feedback: 'outono' },
-                //-             { text: 'Negra', feedback: 'inverno' },
-                //-             { text: 'Clara rosada', feedback: 'verao' },
-                //-             { text: 'Clara amarelada', feedback: 'primavera' },
-                //-             { text: 'Morena dourada', feedback: 'primavera' },
-                //-             { text: 'Morena acinzentada', feedback: 'inverno' },
-                //-             { text: 'Negra profunda', feedback: 'inverno' },
-                //-             { text: 'Pêssego', feedback: 'primavera' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Qual dessas imagens mais se assemelha ao seu subtom?',
-                //-         options: [
-                //-             { text: 'Fundo rosado/azulado (frio)', feedback: 'verao' },
-                //-             { text: 'Fundo amarelado/dourado (quente)', feedback: 'primavera' },
-                //-             { text: 'Fundo neutro', feedback: 'outono' },
-                //-             { text: 'Fundo oliva (acinzentado)', feedback: 'inverno' },
-                //-             { text: 'Fundo bege', feedback: 'outono' },
-                //-             { text: 'Fundo avermelhado', feedback: 'primavera' },
-                //-             { text: 'Fundo marfim', feedback: 'verao' },
-                //-             { text: 'Fundo bronzeado', feedback: 'outono' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Qual imagem representa melhor o seu contraste?',
-                //-         options: [
-                //-             { text: 'Baixo contraste (cabelo, olhos e pele claros)', feedback: 'verao' },
-                //-             { text: 'Baixo contraste (cabelo, olhos e pele escuros)', feedback: 'outono' },
-                //-             { text: 'Alto contraste (cabelo e olhos escuros, pele clara)', feedback: 'inverno' },
-                //-             { text: 'Alto contraste (cabelo e olhos claros, pele escura)', feedback: 'primavera' },
-                //-             { text: 'Contraste médio (cabelo escuro, pele média, olhos claros)', feedback: 'outono' },
-                //-             { text: 'Contraste médio (cabelo claro, pele clara, olhos escuros)', feedback: 'verao' },
-                //-             { text: 'Contraste alto (pele negra, olhos claros)', feedback: 'inverno' }
-                //-             ]
-                //-     },
-                //-     {
-                //-         text: 'Como sua pele reage ao sol?',
-                //-         options: [
-                //-             { text: 'Bronzeia facilmente, quase não queima', feedback: 'primavera' },
-                //-             { text: 'Queima e depois bronzeia', feedback: 'outono' },
-                //-             { text: 'Queima e descasca, dificilmente bronzeia', feedback: 'verao' },
-                //-             { text: 'Não bronzeia, só queima', feedback: 'inverno' },
-                //-             { text: 'Bronzeia lentamente, mas não queima', feedback: 'outono' },
-                //-             { text: 'Queima rapidamente, nunca bronzeia', feedback: 'inverno' },
-                //-             { text: 'Bronzeia rápido e fica dourada', feedback: 'primavera' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Você tem sardas naturais visíveis?',
-                //-         options: [
-                //-             { text: 'Não tenho', feedback: 'inverno' },
-                //-             { text: 'Sim, e são douradas', feedback: 'primavera' },
-                //-             { text: 'Sim, e são acinzentadas', feedback: 'verao' },
-                //-             { text: 'Sim, e são avermelhadas', feedback: 'outono' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Escolha a imagem que mais se assemelha à cor das suas sobrancelhas:',
-                //-         options: [
-                //-             { text: 'Loiro', feedback: 'verao' },
-                //-             { text: 'Castanho claro', feedback: 'primavera' },
-                //-             { text: 'Castanho médio', feedback: 'outono' },
-                //-             { text: 'Castanho escuro', feedback: 'inverno' },
-                //-             { text: 'Preto', feedback: 'inverno' },
-                //-             { text: 'Ruivo', feedback: 'outono' },
-                //-             { text: 'Loiro escuro', feedback: 'verao' },
-                //-             { text: 'Castanho dourado', feedback: 'primavera' },
-                //-             { text: 'Castanho acinzentado', feedback: 'outono' },
-                //-             { text: 'Preto azulado', feedback: 'inverno' },
-                //-             { text: 'Ruivo claro', feedback: 'primavera' },
-                //-             { text: 'Castanho avermelhado', feedback: 'outono' }
-                //-         ]
-                //-     }
-                //-     ], {
-                //-     verao: `
-                //-         <h2>Seu resultado é:</h2>
-                //-         <p>Você é uma pessoa de verão! ☀️</p>
-                //-         <button type="button" class="closeModal">Fechar</button>
-                //-     `,
-                //-     inverno: `
-                //-         <h2>Seu resultado é:</h2>
-                //-         <p>Você é uma pessoa de inverno! ❄️</p>
-                //-         <button type="button" class="closeModal">Fechar</button>
-                //-     `,
-                //-     outono: `
-                //-         <h2>Seu resultado é:</h2>
-                //-         <p>Você é uma pessoa de outono! 🍂</p>
-                //-         <button type="button" class="closeModal">Fechar</button>
-                //-     `,
-                //-     primavera: `
-                //-         <h2>Seu resultado é:</h2>
-                //-         <p>Você é uma pessoa de primavera! 🌸</p>
-                //-         <button type="button" class="closeModal">Fechar</button>
-                //-     `
-                //- })
-
-                //- +buzzfeedQuiz([
-                //-     {
-                //-         text: 'Elige la imagen que más se parece al color de tu cabello:',
-                //-         options: [
-                //-             { text: 'Rubio claro', feedback: 'verano' },
-                //-             { text: 'Rubio dorado', feedback: 'primavera' },
-                //-             { text: 'Castaño claro', feedback: 'primavera' },
-                //-             { text: 'Castaño medio', feedback: 'otoño' },
-                //-             { text: 'Castaño oscuro', feedback: 'invierno' },
-                //-             { text: 'Negro', feedback: 'invierno' },
-                //-             { text: 'Pelirrojo', feedback: 'otoño' },
-                //-             { text: 'Rubio platinado', feedback: 'verano' },
-                //-             { text: 'Rubio cenizo', feedback: 'verano' },
-                //-             { text: 'Castaño rojizo', feedback: 'otoño' },
-                //-             { text: 'Negro azulado', feedback: 'invierno' },
-                //-             { text: 'Castaño dorado', feedback: 'primavera' },
-                //-             { text: 'Pelirrojo cobrizo', feedback: 'primavera' },
-                //-             { text: 'Pelirrojo oscuro', feedback: 'otoño' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Elige la imagen que más se parece al color de tus ojos:',
-                //-         options: [
-                //-             { text: 'Azul', feedback: 'verano' },
-                //-             { text: 'Verde', feedback: 'primavera' },
-                //-             { text: 'Castaño claro', feedback: 'primavera' },
-                //-             { text: 'Castaño medio', feedback: 'otoño' },
-                //-             { text: 'Castaño oscuro', feedback: 'invierno' },
-                //-             { text: 'Miel/Ámbar', feedback: 'otoño' },
-                //-             { text: 'Gris', feedback: 'verano' },
-                //-             { text: 'Azul grisáceo', feedback: 'verano' },
-                //-             { text: 'Verde oliva', feedback: 'otoño' },
-                //-             { text: 'Negro', feedback: 'invierno' },
-                //-             { text: 'Verde agua', feedback: 'primavera' },
-                //-             { text: 'Azul profundo', feedback: 'invierno' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Elige la imagen que más se parece al tono de tu piel:',
-                //-         options: [
-                //-             { text: 'Muy clara', feedback: 'verano' },
-                //-             { text: 'Clara', feedback: 'primavera' },
-                //-             { text: 'Media', feedback: 'otoño' },
-                //-             { text: 'Oliva', feedback: 'invierno' },
-                //-             { text: 'Morena', feedback: 'otoño' },
-                //-             { text: 'Negra', feedback: 'invierno' },
-                //-             { text: 'Clara rosada', feedback: 'verano' },
-                //-             { text: 'Clara amarillenta', feedback: 'primavera' },
-                //-             { text: 'Morena dorada', feedback: 'primavera' },
-                //-             { text: 'Morena ceniza', feedback: 'invierno' },
-                //-             { text: 'Negra profunda', feedback: 'invierno' },
-                //-             { text: 'Durazno', feedback: 'primavera' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: '¿Cuál de estas imágenes se parece más a tu subtono?',
-                //-         options: [
-                //-             { text: 'Fondo rosado/azulado (frío)', feedback: 'verano' },
-                //-             { text: 'Fondo amarillento/dorado (cálido)', feedback: 'primavera' },
-                //-             { text: 'Fondo neutro', feedback: 'otoño' },
-                //-             { text: 'Fondo oliva (cenizo)', feedback: 'invierno' },
-                //-             { text: 'Fondo beige', feedback: 'otoño' },
-                //-             { text: 'Fondo rojizo', feedback: 'primavera' },
-                //-             { text: 'Fondo marfil', feedback: 'verano' },
-                //-             { text: 'Fondo bronceado', feedback: 'otoño' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: '¿Qué imagen representa mejor tu contraste?',
-                //-         options: [
-                //-             { text: 'Bajo contraste (cabello, ojos y piel claros)', feedback: 'verano' },
-                //-             { text: 'Bajo contraste (cabello, ojos y piel oscuros)', feedback: 'otoño' },
-                //-             { text: 'Alto contraste (cabello y ojos oscuros, piel clara)', feedback: 'invierno' },
-                //-             { text: 'Alto contraste (cabello y ojos claros, piel oscura)', feedback: 'primavera' },
-                //-             { text: 'Contraste medio (cabello oscuro, piel media, ojos claros)', feedback: 'otoño' },
-                //-             { text: 'Contraste medio (cabello claro, piel clara, ojos oscuros)', feedback: 'verano' },
-                //-             { text: 'Alto contraste (piel negra, ojos claros)', feedback: 'invierno' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: '¿Cómo reacciona tu piel al sol?',
-                //-         options: [
-                //-             { text: 'Se broncea fácilmente, casi no se quema', feedback: 'primavera' },
-                //-             { text: 'Se quema y luego se broncea', feedback: 'otoño' },
-                //-             { text: 'Se quema y se pela, difícilmente se broncea', feedback: 'verano' },
-                //-             { text: 'No se broncea, solo se quema', feedback: 'invierno' },
-                //-             { text: 'Se broncea lentamente, pero no se quema', feedback: 'otoño' },
-                //-             { text: 'Se quema rápido, nunca se broncea', feedback: 'invierno' },
-                //-             { text: 'Se broncea rápido y queda dorada', feedback: 'primavera' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: '¿Tienes pecas naturales visibles?',
-                //-         options: [
-                //-             { text: 'No tengo', feedback: 'invierno' },
-                //-             { text: 'Sí, y son doradas', feedback: 'primavera' },
-                //-             { text: 'Sí, y son cenizas', feedback: 'verano' },
-                //-             { text: 'Sí, y son rojizas', feedback: 'otoño' }
-                //-         ]
-                //-     },
-                //-     {
-                //-         text: 'Elige la imagen que más se parece al color de tus cejas:',
-                //-         options: [
-                //-             { text: 'Rubio', feedback: 'verano' },
-                //-             { text: 'Castaño claro', feedback: 'primavera' },
-                //-             { text: 'Castaño medio', feedback: 'otoño' },
-                //-             { text: 'Castaño oscuro', feedback: 'invierno' },
-                //-             { text: 'Negro', feedback: 'invierno' },
-                //-             { text: 'Pelirrojo', feedback: 'otoño' },
-                //-             { text: 'Rubio oscuro', feedback: 'verano' },
-                //-             { text: 'Castaño dorado', feedback: 'primavera' },
-                //-             { text: 'Castaño cenizo', feedback: 'otoño' },
-                //-             { text: 'Negro azulado', feedback: 'invierno' },
-                //-             { text: 'Pelirrojo claro', feedback: 'primavera' },
-                //-             { text: 'Castaño rojizo', feedback: 'otoño' }
-                //-         ]
-                //-     }
-                //-     ], {
-                //-     verano: `
-                //-         <h2>Tu resultado es:</h2>
-                //-         <p>¡Eres una persona de verano! ☀️</p>
-                //-         <button type="button" class="closeModal">Cerrar</button>
-                //-     `,
-                //-     invierno: `
-                //-         <h2>Tu resultado es:</h2>
-                //-         <p>¡Eres una persona de invierno! ❄️</p>
-                //-         <button type="button" class="closeModal">Cerrar</button>
-                //-     `,
-                //-     otoño: `
-                //-         <h2>Tu resultado es:</h2>
-                //-         <p>¡Eres una persona de otoño! 🍂</p>
-                //-         <button type="button" class="closeModal">Cerrar</button>
-                //-     `,
-                //-     primavera: `
-                //-         <h2>Tu resultado es:</h2>
-                //-         <p>¡Eres una persona de primavera! 🌸</p>
-                //-         <button type="button" class="closeModal">Cerrar</button>
-                //-     `
-                //- })
-            
+                        a(href="https://www.dafiti.com.br/nike/")
+                            h2 Nike Black Friday
+                        a(href="https://www.dafiti.com.br/adidas/")
+                            h2 Adidas Black Friday
+                        a(href="https://www.dafiti.com.br/mango/")
+                            h2 Mango Black Friday
+                        a(href="https://www.dafiti.com.br/santa-lolla/")
+                            h2 Santa Lolla Black Friday
+                        a(href="https://www.dafiti.com.br/gap/")
+                            h2 GAP Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                            h2 Vestido Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                            h2 Sandália Feminina Black Friday
+                        a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                            h2 Bolsa Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                            h2 Camiseta Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                            h2 Bermuda Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                            h2 Rasteira Black Friday
+                        a(href="https://www.dafiti.com.br/vizzano/")
+                            h2 Vizzano Black Friday
+                        a(href="https://www.dafiti.com.br/farm/")
+                            h2 FARM Black Friday
+                        a(href="https://www.dafiti.com.br/tricae/")
+                            h2 Tricae Black Friday
+                        a(href="https://www.dafiti.com.br/ogochi/")
+                            h2 Ogochi Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                            h2 Mocassim Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                            h2 Scarpin Black Friday
+                        a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                            h2 Calça Jeans Black Friday
+                        a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                            h2 Carteira Black Friday
+                        a(href="https://www.dafiti.com.br/papete/")
+                            h2 Papete Black Friday
+                        a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                            h2 Tommy Hilfiger Black Friday
+                        a(href="https://www.dafiti.com.br/lacoste/")
+                            h2 Lacoste Black Friday
+                        a(href="https://www.dafiti.com.br/moleca/")
+                            h2 Moleca Black Friday
+                        a(href="https://www.dafiti.com.br/vans/")
+                            h2 Vans Black Friday
+                        a(href="https://www.dafiti.com.br/calvin-klein/")
+                            h2 Calvin Klein Black Friday
+                        a(href="https://www.dafiti.com.br/reserva/")
+                            h2 Reserva Black Friday
+                        a(href="https://www.dafiti.com.br/tenis/casual/")
+                            h2 Tênis Casual Black Friday
+                        a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                            h2 Roupa Fitness Black Friday
+                        a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                            h2 Sneaker Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                            h2 Chinelo Black Friday
+                        a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                            h2 Relógio Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                            h2 Saia Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                            h2 Sapato Social Black Friday
+                        a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                            h2 Bota Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                            h2 Calça Black Friday
+                        a(href="https://www.dafiti.com.br/new-balance/")
+                            h2 New Balance Black Friday
+                        a(href="https://www.dafiti.com.br/asics/")
+                            h2 Asics Black Friday
+                        a(href="https://www.dafiti.com.br/havaianas/")
+                            h2 Havaianas Black Friday
+                        a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                            h2 Boné Black Friday
+                        a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                            h2 Biquíni Black Friday
+   
     //- script(src="external/scripts.js")
     script(src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js")
     script(src="js/main.js")

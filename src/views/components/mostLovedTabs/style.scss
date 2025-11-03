@@ -115,6 +115,14 @@
                     text-decoration: none;
                     width: fit-content;
                     padding: .7em 2.5em;
+                    transition-duration: .3s;
+
+                    &:hover {
+                        background-color: #ffffff;
+                        p {
+                            color: #4E2F90;
+                        }
+                    }
                 }
             }
 

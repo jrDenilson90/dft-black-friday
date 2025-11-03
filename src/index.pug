@@ -30,7 +30,9 @@ html(lang="pt-br")
                         .boxText
                             p.text A moda nunca foi tão acessível e divertida como na Black Friday Dafiti. Confira nossa seleção de roupas, calçados e acessórios das melhores marcas, com descontos de arrasar e frete grátis.
                             p A Black Friday de 2025 acontecerá no dia 28 de novembro:
-                        +countdown('2025-11-28T00:00:00')
+                        //- +countdown('2025-11-28T00:00:00')
+                        .   
+                            {countdown-black-friday:latest}
                 
                 .boxForm
                     .linha
@@ -611,7 +613,10 @@ html(lang="pt-br")
                         }
                     ])
 
-                .boxSearched
+                . 
+                    {mais-buscados-black:latest}
+                
+                //- .boxSearched
                     .glitch
                         h2.line <span>Mais buscados da</span> BLACK
                     .searched
